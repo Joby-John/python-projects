@@ -1,5 +1,5 @@
 print("Welcome to lift converter ")
-euf = (input("Enter the floor no you want to conert from EU to US: "))
+euf = (input("Enter the floor no you want to convert from EU to US: "))
 try:
     euf = int(euf)
     usf = euf+1 
