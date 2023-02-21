@@ -32,7 +32,7 @@ try:
     elif (op == '/'):
         c = div(a,b)
     else:
-        c = "err"
+        c = "err" # since not working of any of the above conditions will leave c without any value and that might result in an error
         print (" enter a valid operation")                
 
     print(" Your result is : ", c)
