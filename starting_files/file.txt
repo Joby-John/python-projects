@@ -1,8 +1,13 @@
 Just a basic text file as I'm learning file operaions in python.
 I just thought i'll write a file myself. Maybe I should use chatgpt for that purpose.
 From next line onwards chatgpt is the author.
-The world is facing an urgent crisis of climate change, with global temperatures rising and extreme weather events becoming more frequent. In response, governments and organizations around the world are taking action to reduce greenhouse gas emissions and transition to clean energy sources.
-One key strategy for reducing emissions is increasing energy efficiency. By using energy more efficiently, we can reduce the amount of energy needed to power our homes, businesses, and transportation systems. This not only helps to reduce greenhouse gas emissions, but can also save money on energy bills.
-Another strategy is transitioning to renewable energy sources, such as wind, solar, and geothermal. Renewable energy sources emit little to no greenhouse gases, and can provide a reliable source of power for homes and businesses.
-Finally, reducing emissions from transportation is also crucial for addressing climate change. This can include promoting public transportation, developing more efficient vehicles, and encouraging the use of bicycles and walking for short trips.
-Overall, addressing climate change requires a multifaceted approach that includes reducing greenhouse gas emissions, transitioning to clean energy sources, and promoting sustainable transportation.
+The world is facing an urgent crisis of climate change, with global temperatures rising and extreme weather events becoming more frequent. 
+In response, governments and organizations around the world are taking action to reduce greenhouse gas emissions and transition to clean energy sources.
+One key strategy for reducing emissions is increasing energy efficiency. By using energy more efficiently, we can reduce the amount of energy needed to 
+power our homes, businesses, and transportation systems. This not only helps to reduce greenhouse gas emissions, but can also save money on energy bills.
+Another strategy is transitioning to renewable energy sources, such as wind, solar, and geothermal. Renewable energy sources emit little to no greenhouse gases, 
+and can provide a reliable source of power for homes and businesses.
+Finally, reducing emissions from transportation is also crucial for addressing climate change. This can include promoting public transportation, 
+developing more efficient vehicles, and encouraging the use of bicycles and walking for short trips.
+Overall, addressing climate change requires a multifaceted approach that includes reducing greenhouse gas emissions, transitioning to clean energy sources, 
+and promoting sustainable transportation.
