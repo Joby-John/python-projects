@@ -19,3 +19,4 @@ try:
     print("Average: ", total/count)
 except:
     print("Enter atleast one number!")
+
