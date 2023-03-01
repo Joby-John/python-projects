@@ -27,3 +27,4 @@ for name in names:
 # Print the histogram of names and counts
 for name, count in counts.items():
     print(name + ' - ' + str(count))
+    fhand.close()
