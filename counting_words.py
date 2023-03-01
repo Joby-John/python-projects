@@ -9,3 +9,6 @@ print(count)
 
 for word,num in count.items():
     print(word +' - ' + str(num) )
+
+for word in count:
+    print(word + ':' + str(count[word])) # just as same as the upper loop
