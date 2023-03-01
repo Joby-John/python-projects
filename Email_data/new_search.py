@@ -6,7 +6,7 @@ with open ('Email_data\mbox-short.txt') as file: # new thing
 
 #The splitlines() method is a built-in Python method that splits a string into a list of lines, based on the newline character ('\n').
 for line in file_contnt.splitlines():
-    #line = file_contnt.rstrip() # dont need rstrip as splitlines automatically strips spaces
+    #line = file_contnt.rstrip() # dont need rstrip as splitlines automatically strips unwanted spaces
     if not line.startswith('From'):
         continue
     sender = line.split()
