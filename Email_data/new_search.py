@@ -12,15 +12,12 @@ for line in file_contnt.splitlines():
     sender = line.split()
     mail = sender[1]
     mail_part = mail.split('@')
-    
-    names.append(mail_part[0])
+    names.append(mail_part[0]) # adding the names to list with append method
 
     
-
-
 count = {}
 for name in names :
-    count[name] = count.get(name,0)+1
+    count[name] = count.get(name,0)+1 # get is used to retrieve value, in this case if there is no value it returns the default 0 and the line then adds 1 to it and assigns that to name
 
 print(count.items())
 
