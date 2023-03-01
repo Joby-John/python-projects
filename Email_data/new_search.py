@@ -14,7 +14,6 @@ for line in file_contnt.splitlines():
     mail_part = mail.split('@')
     
     names.append(mail_part[0])
-    #print(names)
 
     
 
