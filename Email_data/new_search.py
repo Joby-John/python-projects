@@ -1,12 +1,12 @@
 #thought i should just create a new program withh all ive learned instead of editing the old one
 names = list()
-with open ('Email_data\mbox-short.txt') as file:
+
+with open ('Email_data\mbox-short.txt') as file: # new thing
     file_contnt = file.read()
-    #print(file_contnt)
 
 #The splitlines() method is a built-in Python method that splits a string into a list of lines, based on the newline character ('\n').
 for line in file_contnt.splitlines():
-    #line = file_contnt.rstrip()
+    #line = file_contnt.rstrip() # dont need rstrip as splitlines automatically strips spaces
     if not line.startswith('From'):
         continue
     sender = line.split()
@@ -14,6 +14,7 @@ for line in file_contnt.splitlines():
     mail_part = mail.split('@')
     
     names.append(mail_part[0])
+    #print(names)
 
     
 
@@ -22,4 +23,8 @@ count = {}
 for name in names :
     count[name] = count.get(name,0)+1
 
-print(count)
+print(count.items())
+
+
+for (key,value) in count.items(): #Using (key, value) or key, value syntaxes equivalent. because both unpacks tuple and assign value to key and value 
+    print(key +":"+ str(value))
