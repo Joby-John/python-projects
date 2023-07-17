@@ -29,7 +29,8 @@ scoreu = 0
 scoreb = 0
 while True:
     user = int(input("Welcome to rock papper scissors.\n To start playing select either of three\n 1- for rock, 2- for paper, 3- for scissors and 4- To quit the game :- "))
-    if (user == 4):
+    if (user > 4 or user <1) :
+        print("!! Sorry you exited the game, either you quitted or entered an invalid number!!")
         print(f"Your score is : you - {scoreu} to Bot- {scoreb} ")
         break
     comp = random.randint(1, 3)
