@@ -38,20 +38,10 @@ while True:
 
     #the graphics
     #user
-    if user == 1:
-        print(f"User ={img[0]}")
-    elif user == 2:
-        print(f"User ={img[1]}")
-    elif user == 3:
-        print(f"User ={img[2]}")    
+    print(f"USER: {img[user-1]}")    
 
     #pc
-    if comp == 1:
-        print(f"Bot ={img[0]}")
-    elif comp == 2:
-        print(f"Bot ={img[1]}")
-    elif comp == 3:
-        print(f"Bot ={img[2]}")
+    print(f"BOT: {img[comp-1]}")
                  
     #logic
     if (comp == user):
