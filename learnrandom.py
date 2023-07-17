@@ -5,5 +5,5 @@ names_string = input("Give me everybody's names, separated by a comma. ")
 names = names_string.split(",")
 
 num = len(names)
-payer = random.randint(0, num)
+payer = random.randint(0, num-1)
 print(f"{names[payer]} is going to buy the meal today!")
