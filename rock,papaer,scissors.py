@@ -25,11 +25,12 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+img = [rock, paper, scissors]
 scoreu = 0
 scoreb = 0
 while True:
     user = int(input("Welcome to rock papper scissors.\n To start playing select either of three\n 1- for rock, 2- for paper, 3- for scissors and 4- To quit the game :- "))
-    if (user > 4 or user <1) :
+    if (user > 3 or user <1) :
         print("!! Sorry you exited the game, either you quitted or entered an invalid number!!")
         print(f"Your score is : you - {scoreu} to Bot- {scoreb} ")
         break
@@ -38,19 +39,19 @@ while True:
     #the graphics
     #user
     if user == 1:
-        print(f"User ={rock}")
+        print(f"User ={img[0]}")
     elif user == 2:
-        print(f"User ={paper}")
+        print(f"User ={img[1]}")
     elif user == 3:
-        print(f"User ={scissors}")    
+        print(f"User ={img[2]}")    
 
     #pc
     if comp == 1:
-        print(f"Bot ={rock}")
+        print(f"Bot ={img[0]}")
     elif comp == 2:
-        print(f"Bot ={paper}")
+        print(f"Bot ={img[1]}")
     elif comp == 3:
-        print(f"Bot ={scissors}")
+        print(f"Bot ={img[2]}")
                  
     #logic
     if (comp == user):
