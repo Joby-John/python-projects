@@ -1,11 +1,13 @@
 import random
 import hang
 
-word_list = hang.words
-chosen_word = random.choice(word_list)
+word_list = hang.words #word_list feeds on words from hang
+chosen_word = random.choice(word_list) #chooses a random word from wordlist
 
 #Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+#print(f'Pssst, the solution is {chosen_word}.')
+
+#initialising list and printing the dashes
 display = []
 for alph in chosen_word:
   display += "_"
