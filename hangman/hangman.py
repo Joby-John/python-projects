@@ -35,6 +35,6 @@ while not end_of_game:
     print("You win!") #keeping track of blanks and winning
   if lives < 1:
     end_of_game = True
-    print("You lose")  
+    print(f"You lose\nThe word was {chosen_word}")  
 
   
