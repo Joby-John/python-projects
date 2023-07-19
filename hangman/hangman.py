@@ -1,11 +1,10 @@
 import random
 import hang                                  #the module that i made containing graphics and word list
+import os                                    # to clear screen
 
 word_list = hang.words                       #word_list feeds on words from hang
 chosen_word = random.choice(word_list)       #chooses a random word from wordlist
 
-#Testing code
-#print(f'Pssst, the solution is {chosen_word}.')
 
 print(hang.logo)                              #the logo
 print("\n\n")
@@ -17,12 +16,13 @@ for alph in chosen_word:
 print(display)  
 
 #game loop
-lives = 6                         # max number of wrong attempts, 6 bc, only 6 hangman figures more will result in index err
+lives = 6                                     # max number of wrong attempts, 6 bc, only 6 hangman figures more will result in index err
 end_of_game = False                           # just initialisation
 
 while not end_of_game:
 
   guess = input("Guess a letter: ").lower()   #receives input
+  os.system('CLS')                            #clearing screen
 
   if guess in display :                       #checks whether this letter(alrady correct was inserted already)
     print(f"You already tried letter '{guess}', try some other letter ") #placement of this is imp.    
