@@ -1,7 +1,7 @@
 import random
 import hang
 
-word_list = ["aardvark", "baboon", "camel"]
+word_list = hang.words
 chosen_word = random.choice(word_list)
 
 #Testing code
@@ -12,7 +12,7 @@ for alph in chosen_word:
 print(display)  
 
 #game loop
-lives = 6 # max number of wrong attempts
+lives = len(display) # max number of wrong attempts
 end_of_game = False # just initialisation
 
 while not end_of_game:
