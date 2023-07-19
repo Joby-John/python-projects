@@ -69,3 +69,16 @@ words = ['design', 'grapes', 'jacket', 'orange', 'rocket', 'tomato', 'window', '
          'xenial', 'yellow', 'zenith', 'access', 'beacon', 'carpet', 'decent', 'expert', 'farmer', 'gentle', 
          'invite', 'jigsaw', 'kindly', 'laptop', 'master', 'needle', 'output', 'parcel', 'quaint', 'refund', 
          'summer', 'thrill', 'united', 'vessel', 'wander', 'xenial', 'yellow', 'zenith']
+
+
+logo = ''' 
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/    '''
+
+                                    
