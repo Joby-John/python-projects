@@ -35,7 +35,7 @@ while not end_of_game:
   if guess not in chosen_word:                #keeps track of wrong attempts
     lives -= 1
     print(f"\nYou guessed {guess}, its not in the word. You just lost a life")
-    print(hang.stages[lives])                 #prints the hangman graphics from the other module hang 
+  print(hang.stages[lives])                 #prints the hangman graphics from the other module hang 
   
   # condition for ending games, either win or lose
   if "_" not in display:
