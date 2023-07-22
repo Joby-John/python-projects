@@ -7,6 +7,9 @@ while exit != 'exit':
   def encrypt (text, shift):
     encrypted = ""
     for letter in text:
+      if letter not in alphabet : 
+        encrypted += letter
+        continue
       pos = alphabet.index(letter)
       if direction == "encode" : pos += shift
       elif direction == "decode": pos += (-1*shift)  
