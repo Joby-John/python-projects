@@ -8,7 +8,7 @@ while exit != 'exit':
   if direction == "encode" or direction == "decode": 
     print("\n")
   else:continue  
-  
+
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
   
@@ -38,3 +38,4 @@ while exit != 'exit':
   exit = input("Enter 'exit' to quit the program, for continuing enter 'go on' :- ").lower()
   print("\n\n")
   os.system('CLS')
+print("GoodBye!")  
