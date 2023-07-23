@@ -8,6 +8,7 @@ while exit != 'exit':
   if direction == "encode" or direction == "decode": 
     print("\n")
   else:continue  
+  
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
   
