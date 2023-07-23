@@ -5,6 +5,9 @@ print(graphics.logo)
 
 while exit != 'exit':
   direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+  if direction == "encode" or direction == "decode": 
+    print("\n")
+  else:continue  
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
   
@@ -26,10 +29,10 @@ while exit != 'exit':
       print(f"Decoded:- {encrypted}")    
   
    
-  if direction == "encode" or direction == "decode": # the problem was what i did was direction == encode or decode, infact what needed was direction == encode or direction == decode  
-    encrypt(text, shift, direction)               # calling function
-  else:
-    print("Enter a valid input")  
+  #if direction == "encode" or direction == "decode": # the problem was what i did was direction == encode or decode, infact what needed was direction == encode or direction == decode  
+  encrypt(text, shift, direction)               # calling function
+  #else:
+  #print("Enter a valid input") , found a much more efficient way just after input encode or decode 
 
   exit = input("Enter 'exit' to quit the program, for continuing enter 'go on' :- ").lower()
   print("\n\n")
