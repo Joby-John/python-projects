@@ -26,10 +26,10 @@ while exit != 'exit':
       print(f"Decoded:- {encrypted}")    
   
    
-  # tried all possible ways to put function call in if else check whether user inputed 
-  # encode or decode else to prevent from running but its not working dont know why
-  # if direction != "encode" or "decode": continue , this is the code i used but it cant distinguish b/w decode and encode an other strings. 
-  encrypt(text, shift, direction)               # calling function
+  if direction == "encode" or direction == "decode": # the problem was what i did was direction == encode or decode, infact what needed was direction == encode or direction == decode  
+    encrypt(text, shift, direction)               # calling function
+  else:
+    print("Enter a valid input")  
 
   exit = input("Enter 'exit' to quit the program, for continuing enter 'go on' :- ").lower()
   print("\n\n")
