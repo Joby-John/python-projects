@@ -4,7 +4,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 print(graphics.logo)
 
 while exit != 'exit':
-  direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+  direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
   
@@ -25,10 +25,11 @@ while exit != 'exit':
     else:
       print(f"Decoded:- {encrypted}")    
   
-  if direction == "encode" or "decode":
-    encrypt(text, shift, direction)               # calling function
-  else:
-    print("Please enter a valid input!")
+   
+  # tried all possible ways to put function call in if else check whether user inputed 
+  # encode or decode else to prevent from running but its not working dont know why
+  # if direction != "encode" or "decode": continue , this is the code i used but it cant distinguish b/w decode and encode an other strings. 
+  encrypt(text, shift, direction)               # calling function
 
   exit = input("Enter 'exit' to quit the program, for continuing enter 'go on' :- ").lower()
   print("\n\n")
