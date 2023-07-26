@@ -21,6 +21,7 @@ while True:
         os.system('CLS')
         break    
     os.system('CLS')
+    print(graphics.logo)
 
 def bid_finder(bidlist):
     highest = 0
