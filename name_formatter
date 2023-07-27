@@ -1,0 +1,18 @@
+import os
+def name_formater(f_name, l_name):
+   name = f_name +" "+ l_name
+   name = name.title()
+   return name
+
+while True:
+    f_name = input("Please enter your first name:- ").lower()
+    l_name = input("Please enter your last name:- ").lower()
+
+    name = name_formater(f_name, l_name)
+
+    print(f"The formatted name is :- {name}")
+    go_again = input("Do you wish to continue, 'yes'/'no':- ").lower()
+    if go_again == "no":
+        break
+    else:
+        os.system('CLS')
