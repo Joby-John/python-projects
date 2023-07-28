@@ -1,7 +1,7 @@
 import os
 def name_formater(f_name, l_name):
    if f_name == "" or l_name =="":
-       return ("You have provided an invalid input")
+       return ("You have provided an invalid input")   #retuen means terminate and return value
    name = f_name +" "+ l_name
    name = name.title()
    return name
@@ -10,7 +10,7 @@ while True:
     f_name = input("Please enter your first name:- ").lower()
     l_name = input("Please enter your last name:- ").lower()
 
-    print(f"OUTPUT:- {name_formater(f_name, l_name)}")
+    print(f"OUTPUT:- {name_formater(f_name, l_name)}")   #calling function inside print statement
     go_again = input("Do you wish to continue, 'yes'/'no':- ").lower()
     if go_again == "no":
         break
