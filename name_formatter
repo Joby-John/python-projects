@@ -1,5 +1,6 @@
 import os
 def name_formater(f_name, l_name):
+   """ recieves first name and last name and formats it by using title()"""     #this is a docstring
    if f_name == "" or l_name =="":
        return ("You have provided an invalid input")   #retuen means terminate and return value
    name = f_name +" "+ l_name
