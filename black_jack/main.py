@@ -69,7 +69,11 @@ def balckjack(): #entire program in this function bc i want to reset all variabl
                 print("YOU WIN 😁\n You scored more")
             if 'yes' == input("DO YOU WANT TO PLAY AGAIN 'yes' or 'no':- ").lower():
                 balckjack()
-            else: sys.exit()         
+            else:
+                os.system('cls') 
+                print(graphics.logo)# just for visual appeal
+                print("BYE!") 
+                sys.exit()  #to exit the program       
 
     #starting the first round after this its all like chain reaction
     start(your_cards, pc_cards, comp_visibility)
