@@ -1,5 +1,7 @@
 import random
 import os
+import sys
+import graphics
 
 def balckjack(): #entire program in this function bc i want to reset all variables when ever the game restarts
     os.system('CLS')
@@ -27,18 +29,24 @@ def balckjack(): #entire program in this function bc i want to reset all variabl
     def next(your_cards, pc_cards, scores):         
         your_cards.append(random.choice(cards))
         print(f"Your cards:{your_cards}")
-        scores[0] += your_cards[-1]
-        comp_visibility = True  #bc its neccessary to show bc after this the game ends
-        if scores[1] < 17:  # <17 rule if comp score is less 17 comp can pick another card
-            pc_cards.append(random.choice(cards))
-            scores[1] += pc_cards[-1] #adding the last picked card to score
+        scores[0] += your_cards[-1]    
+        if scores[0] > 16:
+            comp_visibility = True  #bc its neccessary to show bc after this the game ends
+        else: comp_visibility = False    
         print_func(your_cards, pc_cards, scores, comp_visibility) #passing to print
+
+    def pc_additional(your_cards, pc_cards,scores, comp_visibility): #for cases when pc has to pick additional
+        pc_cards.append(random.choice(cards))
+        scores[1] += pc_cards[-1]
+        print_func(your_cards,pc_cards,scores,comp_visibility)
 
     #printing and score evaluation
     def print_func(your_cards, pc_cards, scores, comp_visibility):
-        print(f"Your cards : {your_cards}, Your Total Score : {scores[0]} ")
+        if scores[1] < 17:  # <17 rule if comp score is less 17 comp can pick another card
+            pc_additional(your_cards,pc_cards,scores, comp_visibility)
+        print(f"Your cards : {your_cards}, Your Total Score : {scores[0]} ") 
         if comp_visibility == False:
-            print(f"Computers  cards is : {pc_cards[0]}") #displaying only first level
+            print(f"Computers  card is : {pc_cards[0]}") #displaying only first level
             go_on = input("Type 'y' to get another card or 'n' to pass:- ").lower() #more cards checker
             if go_on == 'y':
                 next(your_cards, pc_cards, scores) # calling 2nd round
@@ -46,22 +54,27 @@ def balckjack(): #entire program in this function bc i want to reset all variabl
                 comp_visibility = True #sets as true bc decided not to get other card and game needs to end
                 print_func(your_cards, pc_cards,scores, comp_visibility) #recursion with only one change comp_visibility as true
         else:
-            print(f"computers cards is: {pc_cards}")    #displaying all comp cards
+            print(f"computers final hand is: {pc_cards}")    #displaying all comp cards
         
         #all the score valuations
-            if scores[0] < scores[1] or scores[0] > 21:
-                print("YOU LOSE\n")
+            if scores[0] > 21:
+                print("YOU LOSE 😭\n You went over \n")
+            elif scores[1] > 21:
+                print("YOU WIN 😁\n Opponent went over \n")
+            elif scores[0] < scores[1]:
+                print("YOU LOSE 😭\n Opponent scored more \n")    
             elif scores[0] == scores[1]:
-                print("ITS A DRAW\n") 
+                print("ITS A DRAW 😐\n") 
             else:
-                print("YOU WIN\n")
+                print("YOU WIN 😁\n You scored more")
             if 'yes' == input("DO YOU WANT TO PLAY AGAIN 'yes' or 'no':- ").lower():
-                balckjack()     
+                balckjack()
+            else: sys.exit()         
 
     #starting the first round after this its all like chain reaction
     start(your_cards, pc_cards, comp_visibility)
                 
-
+print(graphics.logo)
 play = input("Do you wanna play black jack type 'yes' or 'no':- ").lower()
 if play == 'yes':
     balckjack()   
