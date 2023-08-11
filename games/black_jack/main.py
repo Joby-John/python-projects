@@ -41,15 +41,15 @@ def startjack():
                 else: comp_visibility = False    
                 print_func(your_cards, pc_cards, scores, comp_visibility) #passing to print
 
-            def pc_additional(your_cards, pc_cards,scores, comp_visibility): #for cases when pc has to pick additional
+            def pc_additional(pc_cards,scores): #for cases when pc has to pick additional
                 pc_cards.append(random.choice(cards))
                 scores[1] += pc_cards[-1]
-                print_func(your_cards,pc_cards,scores,comp_visibility)
+                return scores[1]
 
             #printing and score evaluation
             def print_func(your_cards, pc_cards, scores, comp_visibility):
                 if scores[1] < 17:  # <17 rule if comp score is less 17 comp can pick another card
-                    pc_additional(your_cards,pc_cards,scores, comp_visibility)
+                    scores[1] = pc_additional(pc_cards,scores)
                 print(f"Your cards : {your_cards}, Your Total Score : {scores[0]} ") 
                 if comp_visibility == False:
                     print(f"Computers  card is : {pc_cards[0]}") #displaying only first level
