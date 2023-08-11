@@ -10,7 +10,7 @@ while game != 4:
     print("Welcome to Game Hub")
     print("Choices:")
     print("1. Blackjack\n2. Hangman\n3. Rock Paper scissors\n4. Quit")
-    game = input("Enter the option you want to cntinue with:- ")
+    game = input("Enter the option you want to continue with:- ")
 
     if game == "1": start_black()
     elif game == "2": start_hang()
