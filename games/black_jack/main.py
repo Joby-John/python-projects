@@ -72,7 +72,8 @@ def startjack():
                         print("ITS A DRAW 😐\n") 
                     else:
                         print("YOU WIN 😁\n You scored more")    
-                    time.sleep(5)    
+                    time.sleep(5)
+                    os.system('CLS')    
                     
         #starting the first round after this its all like chain reaction
             if play == 'yes':        
