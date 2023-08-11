@@ -1,7 +1,7 @@
 from black_jack.main import startjack as start_black
 from hangman.hangman import start as start_hang
 from R_P_S import start as start_rock
-from number_guess_game import game as number_guess
+from number_guess.number_guess_game import game as number_guess
 import sys
 import os
 game = 0

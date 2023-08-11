@@ -1,10 +1,12 @@
 import random
 import os
 import time
+from. import graphics
 
 def game():
     while True:
         os.system('CLS')
+        print(graphics.logo)
         print("Welcome to Number Guessing Game!")
         num = random.randint(1,100)
         print("I'm thinking of a number between 1 to 100")
