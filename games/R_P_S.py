@@ -1,4 +1,5 @@
 import random
+import os
 
 def start():
     rock = '''
@@ -27,6 +28,8 @@ def start():
         (____)
     ---.__(___)
     '''
+
+    os.system('CLS')
     img = [rock, paper, scissors]
     scoreu = 0
     scoreb = 0
