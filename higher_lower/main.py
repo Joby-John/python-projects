@@ -6,6 +6,7 @@ import time
 
 data = game_data.data
 score = 0
+os.system('CLS')
 
 def first_comp():
     """Getting first input"""
