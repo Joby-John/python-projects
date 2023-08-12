@@ -26,7 +26,7 @@ def logic(first_comp, second_comp):
     elif second_comp['follower_count'] > first_comp['follower_count']: right = 'b'
     else: right = "equal"
 
-    choice = input("Who has more followers A/B:- ")
+    choice = input("\nWho has more followers A/B:- ")
     if choice == right :
         print("You are right!")
         global score # because the score is defined globally else it'll get rest in every iteration
