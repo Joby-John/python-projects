@@ -2,15 +2,15 @@ from black_jack.main import startjack as start_black
 from hangman.hangman import start as start_hang
 from R_P_S import start as start_rock
 from number_guess.number_guess_game import game as number_guess
-from high_low.main import start as high
+from high_low.main import starthigh as high
 import sys
 import os
-import games.display as display
+import display
 
 
 game = 0
 
-while True:
+while game != 6:
     os.system('CLS')
     print(display.logo)
     print("Choices:")

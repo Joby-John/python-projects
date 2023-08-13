@@ -1,7 +1,7 @@
 import random
 import os
 import time
-from .import graphics
+from . import graphics
 
 def startjack():
     count = 0

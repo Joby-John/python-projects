@@ -35,7 +35,7 @@ def logic(first_comp, second_comp):
         print(f"Sorry that's wrong, your total score :{score}")
         return 0    
 
-def start():
+def starthigh():
     while True:
         print(graphics.logo)
         comp_a = first_comp()
@@ -54,7 +54,6 @@ def start():
             time.sleep(3)
             os.system('CLS')
 
-start()
 
     
 
