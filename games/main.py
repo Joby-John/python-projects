@@ -5,14 +5,14 @@ from number_guess.number_guess_game import game as number_guess
 from high_low.main import start as high
 import sys
 import os
-import graphics
+import games.display as display
 
 
 game = 0
 
 while True:
     os.system('CLS')
-    print(graphics.logo)
+    print(display.logo)
     print("Choices:")
     print("1. Blackjack\n2. Hangman\n3. Rock Paper scissors\n4. Number Guess game\n5. higher lower \n6. Quit")
     game = int(input("Enter the option you want to continue with:- "))
