@@ -35,7 +35,6 @@ def logic(first_comp, second_comp):
         print(f"Sorry that's wrong, your total score :{score}")
         return 0    
 
-
 while True:
     print(graphics.logo)
     comp_a = first_comp()
@@ -47,7 +46,7 @@ while True:
         break
     else: 
         time.sleep(3)
-        os.system('CLS')
+        os.system('CLS')           
 
     
 
