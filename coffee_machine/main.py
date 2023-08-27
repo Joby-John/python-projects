@@ -11,7 +11,7 @@ cont = False
 
 
 def report(f_wat, f_mil, f_cof, f_mo, display):
-    """updates as well as displays current resources """
+    """updates as well as displays current resources. """
     global res, money
 
     if not display:
