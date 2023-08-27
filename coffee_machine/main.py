@@ -11,6 +11,7 @@ cont = False
 
 
 def report(f_wat, f_mil, f_cof, f_mo, display):
+    """updates as well as displays current resources """
     global res, money
 
     if not display:
@@ -23,6 +24,7 @@ def report(f_wat, f_mil, f_cof, f_mo, display):
 
 
 def enough(wat, mil, cof, sel):
+    """Checks and returns whether there is enough resources to process the order"""
     if sel == "capuccino":
         if wat >= cappuccino['ingredients']['water'] and mil >= cappuccino['ingredients']['milk'] and cof >= \
                 cappuccino['ingredients']['coffee']:
@@ -43,6 +45,7 @@ def enough(wat, mil, cof, sel):
 
 
 def dispense(amount, selected):
+    """ Handles  dispensing coffee, change and updating resources in report function"""
     if selected == 'latte':
         selected = latte
     elif selected == 'espresso':
@@ -52,8 +55,9 @@ def dispense(amount, selected):
 
     change = amount - (selected['cost'])
     if change >= 0:
-        print(f"Here is {change}$ in change")
-        print(f"Here is your {selection}, enjoy!")
+        if change > 0:
+            print(f"Here is {change}$ in change")
+        print(f"Here is your {selection}, ☕enjoy!")
         report(selected['ingredients']['water'], selected['ingredients']['milk'], selected['ingredients']['coffee'],
                selected['cost'], display=False)
     else:
@@ -67,18 +71,18 @@ while True:
         break
 
     elif selection == 'report':
-        view = True
+        view = True  # default value of view is false, true is for viewing report, false only for updating
         report(res['water'], res['milk'], res['coffee'], money, view)
         time.sleep(5)
         continue
-    elif selection == 'espresso' or selection == 'latte' or selection == 'capuccino':
-        cont = enough(res['water'], res['milk'], res['coffee'], selection)
-    else:
+    elif selection == 'espresso' or selection == 'latte' or selection == 'cappuccino':
+        cont = enough(res['water'], res['milk'], res['coffee'], selection)  # cont is for indicating whether resources are enough or not
+    else:  # To manage situation where user inputs something else
         print("Please enter a valid option")
         time.sleep(3)
         continue
 
-    if cont:
+    if cont:  # iff cont returns true lines below are executed else no update nor any coffee
         print("Please enter the coins")
         quart = int(input("How many quarters:- "))
         dime = int(input("How many dimes:- "))
@@ -92,4 +96,3 @@ while True:
     else:
         print("Sorry not enough resources for the selection")
         time.sleep(3)
-
