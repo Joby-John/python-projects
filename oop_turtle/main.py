@@ -21,5 +21,10 @@ my_screen.exitonclick()
 # then click + in top and search for required package and then install
 # we can use it by importing as usual
 
-import prettytable
+from prettytable import PrettyTable # importing the package class PrettyTable from package pretty table
 
+table = PrettyTable()# assigning it to an object
+
+table.add_column("Pokemon", ["Pikachu", "Eevee", "Charizard"]) # accessing add_ column function from class
+table.add_column("Power type", ["Electric", "Fire", "Fire"])
+print(table)
