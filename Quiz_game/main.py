@@ -9,7 +9,7 @@ print(graphics.img)
 
 q_bank = []
 
-for i, question in enumerate(q_data):  # repeats till end of list and  stores the number
+for i, question in enumerate(q_data):  # repeats till end of list and  stores the iteration number in i
     qn_to_obj = (Question(q_data[i]["text"], q_data[i]["answer"]))  # passing qn and ans from
     # q_data as question object to qn_to_obj instance of the class Question
     q_bank.append(qn_to_obj)  # the passed question objects are appended(which contains qn and & rly of each qn)
