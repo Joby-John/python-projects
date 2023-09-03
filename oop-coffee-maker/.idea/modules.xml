@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Desktop/Algebra/oop-coffee-machine-start/oop-coffee-machine-start/.idea/oop-coffee-machine-start.iml" filepath="$USER_HOME$/Desktop/Algebra/oop-coffee-machine-start/oop-coffee-machine-start/.idea/oop-coffee-machine-start.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oop-coffee-maker.iml" filepath="$PROJECT_DIR$/.idea/oop-coffee-maker.iml" />
     </modules>
   </component>
