@@ -23,5 +23,5 @@ for i in range(0, len(q_bank)):
     if "yes" != input("Do you want to continue:- ").lower():  # option to quit in middle
         break
     os.system('CLS')
-print(f"Your final score is :- {ask.score} ")  # printing final score
+print(f"Your final score is :- {ask.score} on {i+1}")  # printing final score
 time.sleep(3)

@@ -6,10 +6,13 @@ class Brain:
         self.score = 0
 
     def next_q(self, q_no):  # q_no is passed with function call
-        print(self.q_list[q_no].text)   # prints the corresponding qn wrt to q_no
-        self.ans = input("Enter Your answer here:- ").lower()  # receiving ans
+        self.ans = input(f"Q.{q_no + 1}: {self.q_list[q_no].text} (true/false)").lower()  # prints the corresponding qn wrt to q_no
+        # self.ans = input("Enter Your answer here:- ").lower()  # receiving ans
 
     def checker(self, q_no):  # q_no passed with function call
         if self.ans == self.q_list[q_no].answer.lower():  # checking ans
             self.score += 1
+            print("That's correct")
+        else:
+            print("That's wrong")
         print(f"Current score = {self.score}/{q_no + 1}")
