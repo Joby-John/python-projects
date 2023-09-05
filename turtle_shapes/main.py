@@ -1,5 +1,4 @@
 import random
-import turtle
 from turtle import Turtle, Screen
 
 color_names = ["Red", "Green", "Blue", "Yellow", "Purple", "Orange", "Pink", "Brown", "Cyan", "Gray"]
