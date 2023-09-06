@@ -1,5 +1,3 @@
-import turtle
-
 import colorgram
 import random
 import turtle as t
@@ -41,4 +39,4 @@ def drawing():
 
 drawing()
 
-turtle.Screen().exitonclick()
+t.Screen().exitonclick()
