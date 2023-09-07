@@ -4,10 +4,13 @@ import random
 
 screen = Screen()
 screen.setup(height=400, width=630)  # width = twice the xcord + turtle length
+
 guess = screen.textinput(prompt="RED/ GREEN/ BLUE/ PINK/ VIOLET", title="Place your Bet")
 color_list = ["RED", "GREEN", "BLUE", "PINK", "VIOLET"]
 y_cords = [150, 100, 50, 0, -50]  # diff ycords bc each have diff position in ycord
 turtles = []  # empty list for storing turtle objs
+
+
 for i in range(0, 5):  # defining 4 turtle objects
     tony = Turtle()  # every turtles name will be tony but they'll be diff instances
     tony.shape("turtle")  # changing shape
