@@ -5,4 +5,4 @@
 #     and put all that in a for loop
 #
 #     first turn to x axis
-#     then to y axix
+#     then to y axis
