@@ -1,5 +1,5 @@
 try:
-    lim = int(input("Enter the number of elements you want fibonacci21 series:- "))
+    lim = int(input("Enter the number of elements you want fibonacci series:- "))
     if lim > 0:
         fib = [0, 1]
         for i in range(2, lim + 1):
