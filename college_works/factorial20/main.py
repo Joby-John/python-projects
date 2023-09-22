@@ -5,7 +5,7 @@ try:
         for i in range(1, num + 1):
             factorial *= i
 
-        print(factorial)
+        print(f"Factorial of {num} :- {factorial}")
     else:
         print("Factorial not defined for negative numbers")
 
