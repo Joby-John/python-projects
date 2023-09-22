@@ -1,7 +1,6 @@
 def adder():
     nums = [int(num) for num in input("Enter numbers to add separated by commas:-").split(",")]
     result = 0
-    print(nums)
     for num in nums:
         result += num
     print(f"Sum = {result}")
@@ -19,12 +18,11 @@ def perfect_sq():
                 if pos == 0:
                     even_list.append(i)
             else:
-                continue
+                break  # breaks even if one digit fails to be even
     for even in range(30, 99):
         if even ** 2 in even_list:
             pair = {even: even ** 2}
             p_sq.update(pair)
-            continue
     print(p_sq)
 
 
