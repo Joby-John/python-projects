@@ -6,9 +6,9 @@ while on == 1:
     table = PrettyTable()
     table_visibility = "yes"
     try:
-        for i in range(0, int(input("How many items do you want to enter:-"))):
+        for i in range(0, int(input("How many kinds of animals are there:-"))):
             animal = input("Enter the animal name:- ")
-            number = int(input("Enter total number of animals in the zoo:-"))
+            number = int(input(f"Enter total number of {animal}s in the zoo:-"))
             zoo_register.update({animal: number})
         numerical_sorted = dict(sorted(zoo_register.items(), key=lambda item: item[1]))  # sorts based on value ie in index 1
         print(f"Animal list in ascending order :- {numerical_sorted}")

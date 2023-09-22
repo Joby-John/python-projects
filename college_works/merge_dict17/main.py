@@ -1,11 +1,12 @@
 dict_list = []
+cars = ["Italian", "JDM"]
 try:
     for i in range(0, 2):
         dict_list.append({})
-        lim = int(input(f"how many elements you want to enter in dictionary {i + 1}:-"))
+        lim = int(input(f"how many {cars[i]} car companies :-"))
         for j in range(0, lim):
-            key = input(f"Enter key no .{i + 1}:- ")
-            value = input(f"Enter value of {key}:- ")
+            key = input(f"Enter {cars[i]} company no .{j + 1}:- ")
+            value = int(input(f"Total number of {key} registered:- "))
             data = {key: value}
             dict_list[i].update(data)
         print(f"Dictionary no.{i + 1}:- {dict_list[i]}")
