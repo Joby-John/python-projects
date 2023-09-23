@@ -11,10 +11,13 @@ def restart(start, end, direction):
 if "yes" == input("do you want to do with recursion yes/ no:- ").lower():
     restart(start=1, end=max_row + 1, direction=1)
 else:
-    i = 1
     direction = 1
+    i = 1
+    end = max_row
     while i >= 1:
-        print(i * "*")
+        for j in range(0, i):
+            print("*", end="")
+        print("")
         if i == max_row:
             direction = -1
         i += direction
