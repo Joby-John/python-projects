@@ -11,6 +11,6 @@ match choice:
         print(f'{round(area,2)} sq.units')
     case 3:
         area = ar_tri(float(input("Enter base:- ")), float(input("Enter height:-")))
-        print(f'{round(area,2)} sq.units')
+        print(f'{round(area,2)} Sq.units')
     case _:
         print("Invalid choice")
