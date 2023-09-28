@@ -1,4 +1,4 @@
-choice = int(input("Which shapes area you want too calculate \n1-square\n2-rectangle\n3-triangle:-"))
+choice = int(input("Which shapes area you want to calculate \n1-square\n2-rectangle\n3-triangle:-"))
 ar_sq = lambda side: side ** 2
 ar_tri = lambda base, height: base * height * .5
 ar_rect = lambda length, breadth: length * breadth
