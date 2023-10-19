@@ -4,6 +4,8 @@ from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
+level = 1
+
 screen = Screen()
 screen.setup(width=600, height=601)
 screen.tracer(0)
@@ -19,3 +21,15 @@ while game_is_on:
     screen.update()
     car_manager.car_creation()
     car_manager.car_movement()
+
+    # Detect collission
+    for car in car_manager.car_list:
+        if car.distance(player) < 20:
+            game_is_on = False
+            screen.title("Game over")
+        elif player.ycor() > player.FINISH_LINE_Y:
+            level += 1
+            player.goto(0, -280)
+            screen.title(f"Level:{level}")
+
+screen.exitonclick()

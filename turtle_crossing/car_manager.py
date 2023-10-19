@@ -23,7 +23,6 @@ class CarManager:
             rand_y = random.randint(-250, 250)
             car.goto(300, rand_y)
             self.car_list.append(car)
-
     def car_movement(self):
         for car in self.car_list:
             car.bk(STARTING_MOVE_DISTANCE)

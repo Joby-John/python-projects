@@ -13,6 +13,8 @@ class Player(Turtle):
         self.shape("turtle")
         self.penup()
         self.game_start()
+        self.level = 1
+        self.FINISH_LINE_Y = 280
 
     def game_start(self):
         self.goto(STARTING_POSITION)
@@ -20,12 +22,10 @@ class Player(Turtle):
         screen.listen()
         screen.onkeypress(self.move, "Up")
 
-    def move(self):
+    def move(self, status=-1):
         self.fd(MOVE_DISTANCE)
-        if self.ycor() == FINISH_LINE_Y:
-            writer = Turtle()
-            writer.hideturtle()
-            writer.write("You Won!")
-            self.goto(STARTING_POSITION)
-
-
+        writer = Turtle()
+        writer.hideturtle()
+        if status == 0:
+            writer.clear()
+            writer.write("Game Over!")
