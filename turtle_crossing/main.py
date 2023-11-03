@@ -5,6 +5,7 @@ from car_manager import CarManager
 from scoreboard import Scoreboard
 
 level = 1
+level_reached = 0 #for speed increase
 
 screen = Screen()
 screen.setup(width=600, height=601)
@@ -19,7 +20,7 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    car_manager.car_creation()
+    level_reached = car_manager.car_creation(level, level_reached)
     car_manager.car_movement()
 
     # Detect collission
@@ -29,6 +30,7 @@ while game_is_on:
             screen.title("Game over")
         elif player.ycor() > player.FINISH_LINE_Y:
             level += 1
+            level_reached = 1
             player.goto(0, -280)
             screen.title(f"Level:{level}")
 
