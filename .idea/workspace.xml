@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eadb561d-bb2b-4c0e-9b66-e0430e7b4c16" name="Changes" comment="Only thing left is to increase the speed with level">
-      <change afterPath="$PROJECT_DIR$/Day_24/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_24/text_file.txt" afterDir="false" />
+    <list default="true" id="eadb561d-bb2b-4c0e-9b66-e0430e7b4c16" name="Changes" comment="added a high score feature to snake and experimenting with file to keep that changes">
+      <change afterPath="$PROJECT_DIR$/Day_24/new_file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_game/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_game/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_game/score_board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_game/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_game/snake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day_24/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day_24/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day_24/text_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day_24/text_file.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697684339173</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added a high score feature to snake and experimenting with file to keep that changes">
+      <option name="closed" value="true" />
+      <created>1700190231822</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700190231822</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +139,7 @@
     <MESSAGE value="small change" />
     <MESSAGE value="did the car part" />
     <MESSAGE value="Only thing left is to increase the speed with level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Only thing left is to increase the speed with level" />
+    <MESSAGE value="added a high score feature to snake and experimenting with file to keep that changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a high score feature to snake and experimenting with file to keep that changes" />
   </component>
 </project>

@@ -1,0 +1,2 @@
+The new text for new file, actually if i try to open a non existing file
+in write mode, it actually gets created and we can write in it as normal.
