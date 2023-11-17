@@ -5,7 +5,8 @@ class Score(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
-        self.highscore = 0
+        with open("savefile.txt", mode="r") as saved_score:
+            self.highscore = int(saved_score.read())
         self.penup()
         self.color("white")
         self.hideturtle()
@@ -19,6 +20,8 @@ class Score(Turtle):
     def reset(self):
         if self.score > self.highscore:
             self.highscore = self.score
+            with open("savefile.txt", mode="w") as saved_score:
+                saved_score.write(str(self.highscore))
         self.score = 0
         self.update_score()
 
