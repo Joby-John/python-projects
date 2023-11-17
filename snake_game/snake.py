@@ -58,3 +58,10 @@ class Snake:
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
+    def reset(self):
+        for seg in self.body:
+            seg.hideturtle()  # instead of shifting dead turtle to distance I made is disappear
+        self.body.clear()
+        self.create_snake()
+        self.head = self.body[0]
