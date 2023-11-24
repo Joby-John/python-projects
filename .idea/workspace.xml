@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eadb561d-bb2b-4c0e-9b66-e0430e7b4c16" name="Changes" comment="learned file and its open attributes">
-      <change afterPath="$PROJECT_DIR$/snake_game/savefile.txt" afterDir="false" />
+    <list default="true" id="eadb561d-bb2b-4c0e-9b66-e0430e7b4c16" name="Changes" comment="now the snake game can keep its highscore records, added file functionality to the program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_game/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_game/score_board.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700249724813</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="now the snake game can keep its highscore records, added file functionality to the program">
+      <option name="closed" value="true" />
+      <created>1700250606562</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700250606562</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +154,7 @@
     <MESSAGE value="Only thing left is to increase the speed with level" />
     <MESSAGE value="added a high score feature to snake and experimenting with file to keep that changes" />
     <MESSAGE value="learned file and its open attributes" />
-    <option name="LAST_COMMIT_MESSAGE" value="learned file and its open attributes" />
+    <MESSAGE value="now the snake game can keep its highscore records, added file functionality to the program" />
+    <option name="LAST_COMMIT_MESSAGE" value="now the snake game can keep its highscore records, added file functionality to the program" />
   </component>
 </project>
